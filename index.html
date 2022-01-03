@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour with Abhishek</title>
+    <script src="https://kit.fontawesome.com/ae83a8787a.js" crossorigin="anonymous"></script>    
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Balsamiq+Sans&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    /*CSS RESET*/
+    body {
+        font-family: 'Balsamiq ';
+        margin: 0px;
+        padding: 5px;
+        background: red;
+    }
+    .header {
+        height: 60px;
+        border-radius: 10px;
+        padding: 10px;
+        background: black;
+        position: sticky;
+        font-family: 'Baloo Bhai 2';
+    }
+    .left {
+        display: inline-block;
+        color: black;
+        position: absolute;
+        left: 30px;
+        top: 10px;
+    }
+    .left img {
+        height: 55px;
+    }
+    .left div {
+        line-height: 14px;
+        font-size: 22px;
+        text-align: center;
+        color: whitesmoke;
+    }
+    .mid {
+        display: block;
+        width: 63%;
+        color: whitesmoke;
+        margin: -7px 25%;
+
+    }
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 4px;
+        display: inline-block;
+        color: black;
+        font-size: 17px;
+    }
+    .navbar {
+        display: inline-block;
+    }
+    .navbar li {
+        font-size: 25px;
+        display: inline-block;
+    }
+    .navbar li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 34px 23px;
+        margin: auto;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+    .right h3 {
+        color: whitesmoke;
+    }
+    #mainarea {
+        width: 100%;
+        height: 100%;
+    }
+    #body {
+        width: 100%;
+        height: 1200px;
+        margin-top: -17px;
+        background: url('photos/i1.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+        border-radius: 10px;
+    }
+    #body header {
+        color: whitesmoke;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 150px;
+        font-family: 'Shadows Into Light';
+        letter-spacing: 10px;
+    }
+    #body p {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Architects Daughter';
+    }
+    #body iframe{
+        margin-left: 25%;
+        margin-top: 75px;  
+        display: flex;
+    } 
+    #boxarea{
+            width: 100%;
+			height: 600px;
+			background: gray;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        #boxarea header{
+            text-align: center;
+            font-size: 60px;
+            font-weight: bolder;
+            font-family: 'Shadows Into Light';
+            letter-spacing: 8px;
+            padding-top: 10px;
+        }
+        .box{
+			width: 400px;
+			height: 250px;
+			background: black;
+			float: left;
+			margin: 60px;
+			}
+		.box img{
+			width: 100%;
+			height: 100%;
+            opacity: .7;
+			}
+        .box img:hover{
+            opacity: 1;
+            transform: scale(1.2,1.2);
+            }
+        .details{
+        text-align: center;
+        font-family: 'Architects Daughter';
+        font-size: 30px;
+        width: 100%;
+        font-weight: bold;
+        padding: 25px 2px;
+        position: relative;
+        }
+    #last {
+        width: 90%;
+        height: 420px;
+        background-color: black;
+        margin-top: 3px;
+        border-radius: 10px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20px;
+    }
+    #last h1{
+        color: whitesmoke;
+    }
+    /*#last table{
+        border: 10px;
+        width: 21%;
+        height: 300px;
+    }*/
+    #last table th{
+        width: 21%;
+        height: 50px;
+        color: whitesmoke;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: left;
+        font-family: 'Architects Daughter';
+    }
+    #last table td{
+        color: whitesmoke;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 100px;
+        font-family: 'Baloo Bhai 2';
+    }
+    #last p{
+        color: whitesmoke;
+        text-align: center;
+        padding-top: 10px;
+        line-height: 1px;
+    } 
+    #last table td i{
+        letter-spacing: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .form-input{
+        width: 70%;
+        height: 30px;
+        color: whitesmoke;
+    }
+    .btn{
+        width: 35%;
+        height: 30px;
+        margin-top: 20px;
+        color: blueviolet;
+        border-radius: 10%;
+        background: violet;
+    }
+    .btn:hover{
+        background: red;
+        color: whitesmoke;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="photos/i3.png" alt="Abhishek toursim">
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="place.html">Places</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <h3>Abhishek toursim </h3>
+        </div>
+    </header>
+    <div id="mainarea">
+        <div id="body">
+            <header>JAMSHEDPUR</header>
+            <p>The largest city in the state, Jamshedpur is dotted with lakes that are surrounded by neatly manicured
+                gardens. Open emerald spaces, lofty hills, lush forests and pristine waterfalls adorn the suburbs of the
+                city, making it a green paradise.
+            </p>
+            <iframe width="50%" height="40%" src="https://www.youtube.com/embed/-qlyCEsH2k4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div id="boxarea">
+            <header>PLACES</header>
+            <div class="box">
+                <img src="photos/park.jpg"/>
+                <div class="details">JUBILEE PARK</div>
+            </div>
+            <div class="box">
+                <img src="photos/sirdorabjitatapark.jpg"/>
+                <div class="details">SIRDORABJITATAPARK</div>
+            </div>
+            <div class="box">
+                <img src="photos/chandil.jpg"/>
+                <div class="details">CHANDIL DAM</div>
+            </div>
+        </div>
+        <div id="last">
+            <h1>ABHISHEK TOURSIM</h1>
+            <hr/>
+            <table align="center">
+                <tr>
+                    <th>WEBSITE MENU</th>
+                    <th>QUICK LINKS</th>
+                    <th>CONTACT WITH US</th>
+                    <th>SUBSCRIBE NOW..</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Places</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <li>Register/Login</li>
+                        <li>Contact Us</li>
+                        <li>Term and Condition</li>
+                        <li>Privacy Policy</li>
+                    <td>
+                        
+                            <i class="fab fa-whatsapp"></i>
+                            <i class="fab fa-twitter-square"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                        
+                    </td>
+                    <td>
+                        <input class="form-input" type="text" placeholder="Enter Your Email"><br/>
+                        <button class="btn" type="button">Subscribe</button>
+                    </td>
+                </tr>
+            </table>
+            <hr/>
+        <p>Made by Abhishek <i class="fab fa-men"></i></p>
+        <p>All Right are Reserved by &copy; ABHISHEK TOURSIM</p>
+        </div>
+    </div>
+</body>
+</html>
